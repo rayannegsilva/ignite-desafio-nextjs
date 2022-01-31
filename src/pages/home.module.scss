@@ -1,1 +1,82 @@
-// TODO
+.container {
+  padding: 15px;
+  display: flex;
+  justify-content:center;
+
+  height: 100vh;
+
+}
+
+.hero {
+  width: 100%;
+  max-width: 840px;
+  padding-left: 1.5rem;
+}
+
+.posts {
+
+  a {
+    display: block;
+
+    & + a {
+      margin-top: 2rem;
+    }
+
+    strong {
+      display: block;
+      font-size: 1.5rem;
+      color: var(--heading);
+      line-height: 34px;
+      letter-spacing: -0.5px;
+    }
+
+    p {
+      margin-top: 3px;
+      line-height: 22px;
+    }
+  }  
+
+}
+
+.postFooter {
+  display: flex;
+  margin-top: .8rem;
+
+  align-items: center;
+  justify-self: center;
+
+  span {
+    font-size: 0.875rem;
+
+    margin-left: 4px;
+    color: var(--info);
+  }
+}
+
+.createdAt {
+  align-items: center;
+  display: flex;
+}
+
+.postAuthor {
+  align-items: center;
+  display: flex;
+
+  margin-left: 28px;
+}
+
+
+.icon {
+  font-size: 20px;
+
+  align-items: center;
+  color: var(--info);
+}
+
+
+.nextPageButton {
+  display: flex;
+  margin-top: 3rem;
+  font-weight: bold;
+  color: var(--highlight);
+}
